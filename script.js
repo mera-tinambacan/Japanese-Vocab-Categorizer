@@ -3,7 +3,7 @@ document.getElementById('processButton').addEventListener('click', async () => {
     console.log("Input text:", textInput);
 
     try {
-        const response = await fetch('https://japanese-vocab-categorizer.vercel.app/api/server');
+        const response = await fetch('https://japanese-vocab-categorizer.vercel.app/api/vocab');
         if (!response.ok) {
             throw new Error("Failed to fetch vocab");
         }
