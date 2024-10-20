@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Vocab App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Japanese Vocab Categorizer</h1>
+
+    <!-- Legend below the heading -->
+    <div id="legend">
+        <ul>
+            <li><span class="circle N5"></span> N5</li>
+            <li><span class="circle N4"></span> N4</li>
+            <li><span class="circle N3"></span> N3</li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <textarea id="textInput" placeholder="Paste your text here..."></textarea>
+        <button id="processButton">Process Text</button>
+
+        <!-- Summary of vocab counts -->
+        <div id="vocabSummary">
+            <h3>Vocabulary Summary</h3>
+            <ul>
+                <li>N5: <span id="n5-count">0</span></li>
+                <li>N4: <span id="n4-count">0</span></li>
+                <li>N3: <span id="n3-count">0</span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

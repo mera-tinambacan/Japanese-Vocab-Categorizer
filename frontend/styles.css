@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#main-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+}
+
+button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Style for JLPT levels in the output */
+#output span.N5 {
+    color: orange;
+}
+
+#output span.N4 {
+    color: blue;
+}
+
+#output span.N3 {
+    color: green;
+}
+
+/* Legend styling */
+#legend {
+    margin-bottom: 20px;
+}
+
+#legend ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Adds space between items */
+}
+
+#legend li {
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.circle.N5 {
+    background-color: orange;
+}
+
+.circle.N4 {
+    background-color: blue;
+}
+
+.circle.N3 {
+    background-color: green;
+}
+
+/* Styling for vocab summary */
+#vocabSummary {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+}
+
+#vocabSummary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#vocabSummary li {
+    margin-bottom: 10px;
+}
