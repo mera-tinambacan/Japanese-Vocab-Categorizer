@@ -3,13 +3,8 @@ document.getElementById('processButton').addEventListener('click', async () => {
     console.log("Input text:", textInput);
 
     try {
-<<<<<<< HEAD
-        const response = await fetch('http://localhost:5000/api/vocab');
-        // const response = await fetch('/api/vocab');
-=======
-        // const response = await fetch('http://localhost:5000/api/server');
+        // const response = await fetch('http://localhost:5000/api/vocab');
         const response = await fetch('/api/vocab');
->>>>>>> 4f3157d56a775d47c86b0432fb53439f49add610
         if (!response.ok) {
             throw new Error("Failed to fetch vocab");
         }
