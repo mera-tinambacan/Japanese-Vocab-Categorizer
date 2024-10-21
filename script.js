@@ -4,7 +4,7 @@ document.getElementById('processButton').addEventListener('click', async () => {
 
     try {
         // const response = await fetch('http://localhost:5000/api/server');
-        const response = await fetch('/api/server');
+        const response = await fetch('/api/vocab');
         if (!response.ok) {
             throw new Error("Failed to fetch vocab");
         }
