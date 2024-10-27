@@ -19,10 +19,13 @@ mongoose.connect(process.env.MONGO_URI)
         console.error("MongoDB connection error:", error);
     });
 
-const vocabSchema = new mongoose.Schema({
-    word: String,
-    level: String,
-});
+    const vocabSchema = new mongoose.Schema({
+        word: String,
+        level: String,
+        on: String,   // On reading
+        kun: String,  // Kun reading
+        eng: String   // English meaning
+    });
 
 const Vocab = mongoose.model('Vocab', vocabSchema);
 
