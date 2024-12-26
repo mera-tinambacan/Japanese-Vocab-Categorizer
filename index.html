@@ -14,9 +14,9 @@
         <h1>言葉 Analyzer</h1>
         <div id="legend">
             <ul>
-                <li><span class="circle N5"></span> N5</li>
-                <li><span class="circle N4"></span> N4</li>
-                <li><span class="circle N3"></span> N3</li>
+                <li><span class="circle N5"></span> N5: <span id="n5-count">0</span></li>
+                <li><span class="circle N4"></span> N4: <span id="n4-count">0</span></li>
+                <li><span class="circle N3"></span> N3: <span id="n3-count">0</span></li>
             </ul>
         </div>
     </header>
@@ -24,16 +24,6 @@
     <div id="main-content">
         <textarea id="textInput" placeholder="Paste your text here..."></textarea>
         <button id="processButton">Process Text</button>
-
-        <!-- Summary of vocab counts -->
-        <div id="vocabSummary">
-            <h3>Vocabulary Summary</h3>
-            <ul>
-                <li>N5: <span id="n5-count">0</span></li>
-                <li>N4: <span id="n4-count">0</span></li>
-                <li>N3: <span id="n3-count">0</span></li>
-            </ul>
-        </div>
     </div>
     
     <div id="output"></div>

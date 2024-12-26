@@ -50,7 +50,7 @@ document.getElementById('processButton').addEventListener('click', async () => {
             return `<span class="vocab-word ${level}" data-level="${level}" data-on="${vocab.on}" data-kun="${vocab.kun}" data-eng="${vocab.eng}">${match}</span>`;
         });
 
-        // Update the vocab summary counts
+        // Update the counts next to the legend items
         document.getElementById('n5-count').textContent = n5Count;
         document.getElementById('n4-count').textContent = n4Count;
         document.getElementById('n3-count').textContent = n3Count;
