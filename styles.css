@@ -37,6 +37,35 @@ h1 {
     }
 }
 
+/* Sticky header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: white; /* Optional: Set the background color to avoid transparency */
+    z-index: 1000; /* Optional: Ensure it stays on top of other content */
+    border-bottom: 1px solid #ccc; /* Optional: Add a bottom border for separation */
+}
+
+/* Styles for the legend to ensure it sticks as well */
+#legend {
+    position: sticky;
+    top: 60px; /* Adjust based on your header height */
+    background-color: white;
+    z-index: 999; /* Ensure it stays above other content but below the header */
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+}
+
 textarea {
     width: 100%;
     max-width: 600px;
