@@ -1,0 +1,21 @@
+{
+    "name": "Japanese Vocab App",
+    "short_name": "Vocab Categorizer",
+    "icons": [
+      {
+        "src": "favicon.ico",
+        "sizes": "16x16",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#007BFF"
+  }
+  
